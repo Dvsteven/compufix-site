@@ -1,0 +1,226 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPUFIX - Soluciones Tecnológicas</title>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body style="font-family: 'Poppins', sans-serif">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#">COMPUFIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Sobre Mi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER con fondo de video -->
+    <header class="hero position-relative overflow-hidden text-white">
+        <!-- Video de fondo -->
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/motherboard-circuit-background.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <!-- Capa oscura encima del video -->
+        <div class="overlay"></div>
+
+        <!-- Contenido -->
+        <div
+            class="container d-flex flex-column flex-md-row align-items-center justify-content-between position-relative z-2 py-5">
+            <div>
+                <h1 class="fw-bold">Steven Henao</h1>
+                <p class="mb-3">Soporte Técnico | Mantenimiento | Asesoría</p>
+                <ul class="list-unstyled">
+                    <li>📞 3137125088</li>
+                    <li>📧 stevenhenao81@gmail.com</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="assets/logo.png" alt="Logo COMPUFIX" class="logo-img mb-2" data-aos="flip-left" />
+                <h2 class="text-info" data-aos="flip-left">COMPUFIX</h2>
+                <p data-aos="flip-left">Soluciones Tecnológicas a tu Alcance</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="py-5 bg-light" id="servicios">
+        <div class="container">
+            <h2 class="text-center mb-4">Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Soporte Técnico</h5>
+                            <p class="card-text">Diagnóstico, reparación, instalación de sistemas y más.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Mantenimiento</h5>
+                            <p class="card-text">Preventivo y correctivo para equipos de cómputo y redes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Asesoría</h5>
+                            <p class="card-text">Recomendaciones técnicas personalizadas según tus necesidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Lo que dicen mis clientes</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" data-aos="zoom-in">
+
+                    <!-- Testimonio 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial text-center px-4">
+                            <p class="lead fst-italic">"Excelente servicio, solucionó el problema de mi laptop en pocas
+                                horas. ¡100% recomendado!"</p>
+                            <h5 class="mt-3 fw-bold">Nadinne Mejia</h5>
+                            <p class="text-info">Soporte y mantenimiento</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial text-center px-4">
+                            <p class="lead fst-italic">"Mi equipo estaba muy lento y pensaba cambiarlo, pero Steven lo
+                                dejó como nuevo."</p>
+                            <h5 class="mt-3 fw-bold">Andres Mejia</h5>
+                            <p class="text-info">Asesoría técnica</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial text-center px-4">
+                            <p class="lead fst-italic">"Además de resolver el problema, me explicó con claridad lo que
+                                había ocurrido. Muy profesional."</p>
+                            <h5 class="mt-3 fw-bold">Blanca Vargas</h5>
+                            <p class="text-info">Cliente frecuente</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="py-5 bg-white" id="contacto">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctame</h2>
+            <form id="form-contacto" class="mx-auto" style="max-width: 600px">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Tu nombre" required />
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Tu correo" required />
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" rows="5" class="form-control" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info text-white w-100">Enviar</button>
+                <!-- Spinner de carga (inicialmente oculto) -->
+                <div id="loader" class="text-center mt-3" style="display: none;">
+                    <div class="spinner-border text-info" role="status">
+                        <span class="visually-hidden">Enviando...</span>
+                    </div>
+                </div>
+                <!-- Mensaje de respuesta -->
+                <p id="respuesta" class="mt-3 text-center fw-semibold"></p>
+            </form>
+        </div>
+        <a href="https://wa.me/573137125088" class="whatsapp-float" target="_blank">
+            <img src="assets/whatsapp-icon.png" alt="WhatsApp" style="width:50px;"/>
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-white bg-dark py-3">
+        <p class="mb-0">© 2025 COMPUFIX | Steven Henao</p>
+    </footer>
+
+    <!-- Bootstrap JS (opcional para componentes dinámicos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        (function () {
+            emailjs.init("SZRoeSfYwWtmBCVqs");
+        })();
+
+        AOS.init({
+            duration: 1000, // duración en milisegundos
+            once: true      // solo se anima una vez
+        });
+    </script>
+</body>
+<!-- Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
+© 2025 Steven Henao – Todos los derechos reservados. -->
+</html>

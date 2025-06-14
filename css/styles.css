@@ -1,0 +1,146 @@
+/* Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
+© 2025 Steven Henao – Todos los derechos reservados. */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos navbar */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00e5ff;
+}
+
+/* Header Hero personalizado */
+/* VIDEO DE FONDO */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Capa de oscurecimiento para mejorar legibilidad del texto */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.7);
+  z-index: 1;
+}
+
+/* Asegura que el contenido quede encima del video */
+.hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+.hero .logo-img {
+  max-width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+  background-color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  color: #00e5ff;
+  font-size: 1.8rem;
+}
+
+/* Cards de servicios */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #00c0d4;
+  font-weight: bold;
+}
+
+/* Formulario contacto */
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00c0d4;
+  box-shadow: 0 0 5px rgba(0, 192, 212, 0.5);
+}
+
+.btn-info {
+  background-color: #00e5ff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #00c0d4;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero .container {
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonial p.lead {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+/* Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
+© 2025 Steven Henao – Todos los derechos reservados. */

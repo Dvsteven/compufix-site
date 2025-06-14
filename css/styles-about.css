@@ -1,0 +1,59 @@
+/* Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
+© 2025 Steven Henao – Todos los derechos reservados. */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Encabezados */
+h1, h2, h5 {
+  color: #00f0ff;
+}
+
+/* Secciones */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bg-black {
+  background-color: #0f0f0f;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #000000, #0c0c0c);
+}
+
+/* Cards de experiencia */
+.border {
+  border-color: #00f0ff !important;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #00f0ff;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .fs-5 {
+    font-size: 1rem;
+  }
+}
+/* Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
+© 2025 Steven Henao – Todos los derechos reservados. */
