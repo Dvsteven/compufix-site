@@ -142,5 +142,66 @@ form textarea:focus {
   right: 20px;
   z-index: 999;
 }
+/* ===== BOTÓN DE TESTIMONIOS (COMPUFIX) ===== */
+.btn-testimonio {
+  display: inline-block;
+  background: linear-gradient(135deg, #00e5ff, #00bcd4);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 192, 212, 0.3);
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de brillo animado */
+.btn-testimonio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn-testimonio:hover::before {
+  left: 125%;
+}
+
+.btn-testimonio:hover {
+  background: linear-gradient(135deg, #03a9f4, #00e5ff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.6);
+  color: #fff;
+}
+
+.btn-testimonio:active {
+  transform: scale(0.98);
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .btn-testimonio {
+    padding: 10px 26px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-testimonio {
+    width: 85%;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
 /* Este proyecto es de uso personal y educativo. Puedes tomar inspiración, pero no copiarlo tal cual sin permiso.
 © 2025 Steven Henao – Todos los derechos reservados. */
